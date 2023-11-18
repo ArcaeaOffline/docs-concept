@@ -1,0 +1,26 @@
+:root {
+  --vp-home-hero-image-background-image: linear-gradient(
+    150deg,
+    #626080 50%,
+    #dcdaf2
+  );
+  --vp-home-hero-image-filter: blur(61.6px);
+
+  --vp-c-brand-1: #756abe;
+  --vp-c-indigo-2: #413d5c;
+  --vp-c-indigo-3: #5c5885;
+  --vp-c-indigo-soft: rgba(65, 61, 92, 0.2);
+}
+
+.dark {
+  --vp-home-hero-image-background-image: linear-gradient(
+    150deg,
+    #413d5c 50%,
+    #dcdaf2
+  );
+
+  --vp-c-brand-1: #c6c3e5;
+  --vp-c-indigo-2: #7169bf;
+  --vp-c-indigo-3: #575175;
+  --vp-c-indigo-soft: rgba(65, 61, 92, 0.28);
+}
