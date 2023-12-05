@@ -1,0 +1,27 @@
+{
+  "type": "score",
+  "version": 2,
+  "scores": [
+    {
+      "songId": "bimbim",
+      "ratingClass": 2,
+      "score": 9870000
+    },
+    {
+      "songId": "bambam",
+      "ratingClass": 3,
+      "score": 9860000
+    },
+    {
+      "uuid": "691607e3-e05c-4538-ac9a-7376aab44751",
+      "songId": "bimbimbambam",
+      "ratingClass": 1,
+      "score": 9950000,
+      "pure": 1111,
+      "far": 22,
+      "lost": 3,
+      "date": 1466029018000,
+      "comment": "bimbim this entry have optional fields bambam"
+    }
+  ]
+}

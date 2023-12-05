@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Arcaea Offline',
@@ -10,22 +9,28 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '简介', link: '/introduction' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: '简介', link: '/introduction/' },
+      { text: '数据交换格式', link: '/data-exchange-format/' },
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    sidebar: {
+      '/introduction': [],
+      '/data-exchange-format/': [
+        {
+          text: '数据交换格式',
+          link: '/data-exchange-format/',
+          items: [
+            {
+              text: '版本 2',
+              items: [{ text: '分数', link: '/data-exchange-format/v2/score' }],
+            },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/ArcaeaOffline' },
     ],
   },
 })
