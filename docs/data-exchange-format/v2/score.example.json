@@ -1,4 +1,5 @@
 {
+  "$schema": "./score.schema.json",
   "type": "score",
   "version": 2,
   "scores": [

@@ -64,18 +64,21 @@
         },
         "modifier": {
           "type": "integer",
-          "description": "0: NORMAL, 1: EASY, 2: HARD",
-          "minimum": 0,
-          "maximum": 2
+          "enum": [0, 1, 2],
+          "description": "0: NORMAL, 1: EASY, 2: HARD"
         },
         "clearType": {
           "type": "integer",
-          "description": "0: TRACK LOST, 1: TRACK COMPLETE(NORMAL CLEAR), 2: FULL RECALL, 3: PURE MEMORY, 4: EASY CLEAR, 5: HARD CLEAR",
-          "minimum": 0,
-          "maximum": 5
+          "enum": [0, 1, 2, 3, 4, 5],
+          "description": "0: TRACK LOST, 1: TRACK COMPLETE(NORMAL CLEAR), 2: FULL RECALL, 3: PURE MEMORY, 4: EASY CLEAR, 5: HARD CLEAR"
+        },
+        "source": {
+          "type": "string",
+          "description": "The source of this score. e.g. \"arcaeaoffline.manually\", \"arcaeaoffline.ocr\""
         },
         "comment": {
-          "type": "string"
+          "type": "string",
+          "description": "User's comment on this score"
         }
       },
       "required": ["songId", "ratingClass", "score"]
