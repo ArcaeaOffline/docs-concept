@@ -23,11 +23,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "description": "The auto-increment field in SQL databases"
         },
         "uuid": {
-          "type": "string",
+          "type": ["string", "null"],
           "format": "uuid"
         },
         "songId": {
@@ -43,41 +43,41 @@
           "minimum": 0
         },
         "pure": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "minimum": 0
         },
         "far": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "minimum": 0
         },
         "lost": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "minimum": 0
         },
         "date": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "description": "A millisecond timestamp"
         },
         "maxRecall": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "minimum": 0
         },
         "modifier": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "enum": [0, 1, 2],
           "description": "0: NORMAL, 1: EASY, 2: HARD"
         },
         "clearType": {
-          "type": "integer",
+          "type": ["integer", "null"],
           "enum": [0, 1, 2, 3, 4, 5],
           "description": "0: TRACK LOST, 1: TRACK COMPLETE(NORMAL CLEAR), 2: FULL RECALL, 3: PURE MEMORY, 4: EASY CLEAR, 5: HARD CLEAR"
         },
         "source": {
-          "type": "string",
+          "type": ["string", "null"],
           "description": "The source of this score. e.g. \"arcaeaoffline.manually\", \"arcaeaoffline.ocr\""
         },
         "comment": {
-          "type": "string",
+          "type": ["string", "null"],
           "description": "User's comment on this score"
         }
       },
