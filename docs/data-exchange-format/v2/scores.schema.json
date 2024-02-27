@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://arcaeaoffline.sevive.xyz/schemas/v2/score.schema.json",
+  "$id": "https://arcaeaoffline.sevive.xyz/def-schemas/v2/score.schema.json",
   "title": "Arcaea Score",
   "type": "object",
   "properties": {

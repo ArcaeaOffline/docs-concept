@@ -22,7 +22,7 @@ export default defineConfig({
           items: [
             {
               text: '版本 2',
-              items: [{ text: '分数', link: '/data-exchange-format/v2/score' }],
+              items: [{ text: '分数', link: '/data-exchange-format/v2/scores' }],
             },
           ],
         },
