@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
+import vite from './vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: vite,
+
   title: 'Arcaea Offline',
   description: 'Arcaea Offline concepts',
   themeConfig: {
@@ -22,15 +25,15 @@ export default defineConfig({
           items: [
             {
               text: '版本 2',
-              items: [{ text: '分数', link: '/data-exchange-format/v2/scores' }],
+              items: [
+                { text: '分数', link: '/data-exchange-format/v2/scores' },
+              ],
             },
           ],
         },
       ],
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/ArcaeaOffline' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/ArcaeaOffline' }],
   },
 })

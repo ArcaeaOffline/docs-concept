@@ -1,0 +1,12 @@
+{
+  "name": "@private-icons/ao",
+  "exports": {
+    "./*": "./*",
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "main": "index.js",
+  "module": "index.mjs"
+}
