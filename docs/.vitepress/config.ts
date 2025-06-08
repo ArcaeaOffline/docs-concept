@@ -7,6 +7,9 @@ export default defineConfig({
 
   title: 'Arcaea Offline',
   description: 'Arcaea Offline concepts',
+
+  base: '/docs-concept',
+
   themeConfig: {
     logo: '/logo-icon.inkscape.svg',
 
