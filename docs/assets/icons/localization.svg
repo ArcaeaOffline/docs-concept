@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       d="m 12.367172,22 0.971591,-2.985085 h 4.723721 L 19.034075,22 h 2.965909 L 17.4872,8.9090909 H 13.920439 L 9.4012628,22 Z m 1.674716,-5.145597 1.610795,-4.953835 h 0.102273 l 1.610795,4.953835 z"
+       id="text2-2"
+       style="display:inline;font-weight:bold;font-size:18px;line-height:1.2;font-family:Inter;-inkscape-font-specification:'Inter Bold';letter-spacing:-2px;fill-rule:evenodd;stroke-width:2;paint-order:stroke fill markers"
+       aria-label="A" />
+    <path
+       id="path1"
+       style="display:inline;baseline-shift:baseline;overflow:visible;vector-effect:none;fill-rule:evenodd;stroke-linejoin:round;paint-order:stroke fill markers;enable-background:accumulate;stop-color:#000000;stop-opacity:1;opacity:1"
+       d="M 8.0000868 2 L 8.0000868 4 L 18.925868 4 C 18.204559 5.0091512 17.571688 6.0143362 16.293056 7.2929688 L 17.707118 8.7070312 C 19.824969 6.58918 21.832118 3.5546875 21.832118 3.5546875 A 1.0001 1.0001 0 0 0 21.000087 2 L 8.0000868 2 z M 13.000087 5 L 13.000087 6 C 13.000087 6 12.993387 7.6418653 12.53329 9.3671875 C 12.303237 10.229849 11.959246 11.095954 11.496181 11.751953 C 11.033116 12.407952 10.491587 12.845875 9.7578993 13.029297 L 8.7871962 13.271484 L 9.2715712 15.212891 L 10.242274 14.970703 C 11.508586 14.654125 12.467042 13.842048 13.128993 12.904297 C 13.790945 11.966546 14.196915 10.895151 14.466884 9.8828125 C 15.006821 7.8581347 15.000087 6 15.000087 6 L 15.000087 5 L 13.000087 5 z "
+       transform="translate(-6.0000868)" />
+  </g>
+</svg>

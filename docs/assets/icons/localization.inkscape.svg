@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="localization.inkscape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="22.627417"
+     inkscape:cx="6.4302523"
+     inkscape:cy="15.224893"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid4"
+       units="px"
+       originx="12"
+       originy="12"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.2;font-family:Inter;-inkscape-font-specification:'Inter Bold';text-align:start;letter-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-opacity:1;paint-order:stroke fill markers"
+       x="8.9729958"
+       y="22"
+       id="text2-2"
+       inkscape:label="A"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="8.9729958"
+         y="22"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Inter;-inkscape-font-specification:'Inter Bold';stroke:none;stroke-opacity:1">A</tspan></text>
+    <g
+       id="g4"
+       style="display:inline"
+       transform="translate(-6.0000868)">
+      <path
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+         d="M 8.0000868,3 H 21.000087 c 0,0 -2,3 -4,5"
+         id="path1" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1;paint-order:stroke fill markers"
+         d="M 14.000087,6 C 14.000087,6 14,13 10,14"
+         id="path2"
+         sodipodi:nodetypes="cc"
+         inkscape:label="path2" />
+    </g>
+  </g>
+</svg>

@@ -8,16 +8,24 @@ import {
   deOptimisePaths,
   importDirectory,
 } from '@iconify/tools'
-;(async () => {
+
+async function buildAo() {
   const source = 'docs/assets/icons'
   const prefix = 'ao'
   const target = '@private-icons/ao/icons.json'
 
   // Load icon set
-  const iconSet = await importDirectory(source, { prefix })
+  const iconSet = await importDirectory(source, {
+    prefix,
+    ignoreImportErrors: 'warn',
+  })
 
   // Parse all icons
   await iconSet.forEach((name, type) => {
+    if (name.includes('-inkscape')) {
+      return
+    }
+
     if (type !== 'icon') {
       // Do not parse aliases
       return
@@ -81,4 +89,8 @@ import {
   // Save icon set
   const iconSetContent = iconSet.export()
   await fs.writeFile(target, JSON.stringify(iconSetContent), 'utf8')
+}
+
+;(async () => {
+  await buildAo
 })()
