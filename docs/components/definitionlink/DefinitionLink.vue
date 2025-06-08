@@ -3,28 +3,28 @@
     <i class="link-with-icon-icon">
       <component :is="linkEntry.icon" />
     </i>
-    <span class="link-with-icon-text">{{ linkEntry.text }}</span>
+    <component class="link-with-icon-text" :is="linkEntry.label" />
   </a>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, h } from 'vue'
 
-import links from './entity-links'
-import type { EntityLinkEntry } from './entity-links'
+import links from './links'
+import type { DefinitionLinkEntry } from './links'
 
 const props = defineProps<{
   target: string
 }>()
 
-const linkEntry = computed<EntityLinkEntry>(() => {
+const linkEntry = computed<DefinitionLinkEntry>(() => {
   const link = links[props.target]
 
   if (link) {
     return link
   } else {
     return {
-      text: `<! ${props.target} !>`,
+      label: h('span', `<! ${props.target} !>`),
     }
   }
 })
