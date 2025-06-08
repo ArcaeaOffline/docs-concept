@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@private-icons/ao':
-        specifier: link:@private-icons\ao
+        specifier: link:@private-icons/ao
         version: link:@private-icons/ao
       vue:
         specifier: ^3.5.16
