@@ -6,7 +6,7 @@ hero:
   name: "Arcaea Offline"
   tagline: "Arcaea Offline 概念文档"
   image:
-    src: logo.publish.svg
+    src: /logo.publish.svg
     alt: Arcaea Offline logo
   actions:
     - theme: brand
