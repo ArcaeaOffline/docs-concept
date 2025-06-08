@@ -5,7 +5,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "icons:build": "node build-icons.js"
+    "icons:build": "node @private-icons/build.js"
   },
   "devDependencies": {
     "@iconify/tools": "^4.1.2",
