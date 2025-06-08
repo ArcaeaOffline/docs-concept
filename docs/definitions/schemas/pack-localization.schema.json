@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/pack-localization.json",
+  "title": "Arcaea Offline Definitions - PackLocalization",
+  "type": "object",
+  "properties": {
+    "lang": {
+      "type": "string",
+      "description": "The language code",
+      "examples": ["ja", "zh-Hans"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": ["lang"]
+}

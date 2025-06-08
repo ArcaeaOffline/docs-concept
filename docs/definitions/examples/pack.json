@@ -1,0 +1,21 @@
+{
+  "id": "finale",
+  "name": "Finale",
+  "description": "The final update of Arcaea Offline,\nwhich bring about the project's end.\n\nIn addition to…",
+  "section": "mainstory",
+  "isWorldExtend": false,
+  "plusCharacter": 1234,
+  "appendages": [
+    {
+      "id": "test_append_1",
+      "name": "Extra Part 1",
+      "isWorldExtend": false
+    }
+  ],
+  "localizations": [
+    {
+      "lang": "ja",
+      "description": "「アーケア·オフライン」の最終アップデート。これによりプロジェクトの終了となります…"
+    }
+  ]
+}

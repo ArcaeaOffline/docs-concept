@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/pack.json",
+  "title": "Arcaea Offline Definitions - Pack",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The string identifier of the pack",
+      "examples": ["test"]
+    },
+    "name": {
+      "type": "string",
+      "description": "The **english** name of the pack",
+      "examples": ["Test Pack"]
+    },
+    "description": {
+      "type": "string",
+      "description": "The **english** description of the pack",
+      "examples": [
+        "The final update of Arcaea Offline,\nwhich bring about the project's end.\n\nIn addition to…"
+      ]
+    },
+    "section": {
+      "type": "string",
+      "description": "Which section does this pack belongs to",
+      "examples": ["arcaea", "mainstory", "mainstory2", "sidestory", "collab"]
+    },
+    "isWorldExtend": {
+      "type": "boolean",
+      "description": "Whether this pack is a World Extend pack"
+    },
+    "plusCharacter": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "appendages": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      }
+    },
+    "localizations": {
+      "type": "array",
+      "items": {
+        "$ref": "https://arcaeaoffline.sevive.xyz/schemas/definitions/pack-localization.json"
+      }
+    }
+  },
+  "required": ["id", "name", "isWorldExtend"]
+}
