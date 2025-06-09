@@ -12,7 +12,10 @@ const schemas = {
   packLocalization: require('../docs/definitions/schemas/pack-localization.schema.json'),
 }
 
-const ajv = new Ajv({ schemas: Object.values(schemas) })
+const ajv = new Ajv({
+  allErrors: true,
+  schemas: Object.values(schemas),
+})
 addFormats(ajv)
 
 function _validate(schema, data) {
