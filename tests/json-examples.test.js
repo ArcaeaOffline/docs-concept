@@ -3,6 +3,7 @@ import { createRequire } from 'node:module'
 import { describe, it } from 'node:test'
 
 import Ajv from 'ajv/dist/2020.js'
+import addFormats from "ajv-formats"
 
 const require = createRequire(import.meta.url)
 
@@ -12,6 +13,7 @@ const schemas = {
 }
 
 const ajv = new Ajv({ schemas: Object.values(schemas) })
+addFormats(ajv)
 
 function _validate(schema, data) {
   const validate = ajv.compile(schema)
