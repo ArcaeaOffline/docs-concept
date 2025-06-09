@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/song.json",
+  "title": "Arcaea Offline Definitions - Song",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The string identifier of the song",
+      "examples": ["test"]
+    },
+    "idx": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "The number identifier of the song",
+      "examples": [123]
+    },
+    "title": {
+      "type": "string",
+      "description": "The **english** title of the song",
+      "examples": ["~TEST~"]
+    },
+    "artist": {
+      "type": "string",
+      "description": "The artist's **english** name",
+      "examples": ["T·T·Tice"]
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "description": "Whether this song is removed in game"
+    },
+    "addedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When is this song added"
+    },
+    "version": {
+      "type": "string",
+      "description": "Which version is this song added",
+      "examples": ["3.0.1", "6.0.0"]
+    },
+    "bpm": {
+      "type": "string",
+      "description": "BPM of this song, can be a range",
+      "pattern": "(\\d+|\\d+-\\d+|\\d+\\s-\\s\\d+)",
+      "examples": ["75", "75-100", "75 - 100"]
+    },
+    "bpmBase": {
+      "type": "number",
+      "minimum": 0.0,
+      "examples": [100, 174.59]
+    },
+    "isRemote": {
+      "type": "boolean",
+      "description": "Whether this song has to be downloaded separately"
+    },
+    "isUnlockableInWorld": {
+      "type": "boolean"
+    },
+    "isBeyondUnlockStateLocal": {
+      "type": "boolean"
+    },
+    "purchase": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "examples": ["original", "partner", "musicgames"]
+    },
+    "side": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "bg": {
+      "type": "string",
+      "examples": ["base_light"]
+    },
+    "bgInverse": {
+      "type": "string",
+      "examples": ["base_conflict"]
+    },
+    "bgDay": {
+      "type": "string",
+      "examples": ["omatsuri_light"]
+    },
+    "bgNight": {
+      "type": "string",
+      "examples": ["omatsuri_conflict"]
+    },
+    "source": {
+      "type": "string",
+      "examples": ["STELLIGHTS"]
+    },
+    "sourceCopyright": {
+      "type": "string",
+      "examples": ["© Pigeon Games"]
+    }
+  },
+  "required": [
+    "id",
+    "isDeleted",
+    "addedAt",
+    "isRemote",
+    "isUnlockableInWorld",
+    "isBeyondUnlockStateLocal"
+  ]
+}

@@ -3,13 +3,14 @@ import { createRequire } from 'node:module'
 import { describe, it } from 'node:test'
 
 import Ajv from 'ajv/dist/2020.js'
-import addFormats from "ajv-formats"
+import addFormats from 'ajv-formats'
 
 const require = createRequire(import.meta.url)
 
 const schemas = {
   pack: require('../docs/definitions/schemas/pack.schema.json'),
   packLocalization: require('../docs/definitions/schemas/pack-localization.schema.json'),
+  song: require('../docs/definitions/schemas/song.schema.json'),
 }
 
 const ajv = new Ajv({
@@ -29,10 +30,7 @@ function _validate(schema, data) {
 
 describe('definition examples', () => {
   it('pack.json', () => {
-    _validate(
-      schemas.pack,
-      require('../docs/definitions/examples/pack.json')
-    )
+    _validate(schemas.pack, require('../docs/definitions/examples/pack.json'))
   })
 
   it('pack-localization.json', () => {
@@ -40,5 +38,9 @@ describe('definition examples', () => {
       schemas.packLocalization,
       require('../docs/definitions/examples/pack-localization.json')
     )
+  })
+
+  it('song.json', () => {
+    _validate(schemas.song, require('../docs/definitions/examples/song.json'))
   })
 })

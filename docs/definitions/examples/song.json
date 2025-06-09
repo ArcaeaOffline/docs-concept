@@ -1,0 +1,23 @@
+{
+  "id": "test",
+  "idx": 1234,
+  "title": "~TEST~",
+  "artist": "TeST",
+  "isDeleted": false,
+  "addedAt": "2025-04-01T08:00:00+08:00",
+  "version": "1.0.0",
+  "bpm": "75 - 100",
+  "bpmBase": 75.75,
+  "isRemote": true,
+  "isUnlockableInWorld": false,
+  "isBeyondUnlockStateLocal": false,
+  "purchase": "test_append_1",
+  "category": "",
+  "side": 0,
+  "bg": "base_anything",
+  "bgInverse": "base_!anything",
+  "bgDay": "",
+  "bgNight": "",
+  "source": "WHEREEVER",
+  "source_copyright": "© example.com 2025"
+}
