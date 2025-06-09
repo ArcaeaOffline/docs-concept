@@ -51,7 +51,30 @@ export default defineConfig({
             {
               text: '版本 5',
               link: '/data-exchange-format/v5/',
-              items: [{ text: '曲包', link: '/data-exchange-format/v5/pack' }],
+              items: [
+                { text: '曲包', link: '/data-exchange-format/v5/pack' },
+                { text: '歌曲', link: '/data-exchange-format/v5/song' },
+                { text: '难度', link: '/data-exchange-format/v5/difficulty' },
+                { text: '谱面信息', link: '/data-exchange-format/v5/chart-info' },
+                { text: '游玩记录', link: '/data-exchange-format/v5/play-result' },
+                {
+                  text: '本地化对象',
+                  items: [
+                    {
+                      text: '曲包',
+                      link: '/data-exchange-format/v5/pack-localization',
+                    },
+                    {
+                      text: '歌曲',
+                      link: '/data-exchange-format/v5/song-localization',
+                    },
+                    {
+                      text: '难度',
+                      link: '/data-exchange-format/v5/difficulty-localization',
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
