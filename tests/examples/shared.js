@@ -1,3 +1,7 @@
+import assert from 'node:assert'
+
+import betterAjvErrors from 'better-ajv-errors'
+
 /**
  * @import Ajv from "ajv/dist/2020.js"
  */
@@ -18,6 +22,6 @@ export function validateJson(ajv, schema, data) {
   const valid = validate(data)
 
   if (!valid) {
-    assert.deepStrictEqual(validate.errors, null)
+    assert.fail(betterAjvErrors(schema, data, validate.errors))
   }
 }
