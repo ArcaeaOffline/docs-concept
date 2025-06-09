@@ -1,5 +1,5 @@
 <template>
-  <a class="VPLink link link-with-icon" :href="linkEntry.href">
+  <a class="VPLink link link-with-icon" :href="withBase(linkEntry.href)">
     <i class="link-with-icon-icon">
       <component :is="linkEntry.icon" />
     </i>
@@ -8,10 +8,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, h } from 'vue'
+import { withBase } from 'vitepress';
+import { computed, h } from 'vue';
 
-import links from './links'
-import type { DefinitionLinkEntry } from './links'
+import type { DefinitionLinkEntry } from './links';
+import links from './links';
 
 const props = defineProps<{
   target: string
