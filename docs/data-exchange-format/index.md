@@ -4,6 +4,6 @@
 
 你可以在 [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) 在线尝试 JSON Schema 验证。
 
-## 版本 2
+## 版本 5
 
-- [分数](./v2/scores.md)
+- [跳转](./v5/index.md)

@@ -47,14 +47,7 @@ export default defineConfig({
         {
           text: '数据交换格式',
           link: '/data-exchange-format/',
-          items: [
-            {
-              text: '版本 2',
-              items: [
-                { text: '分数', link: '/data-exchange-format/v2/scores' },
-              ],
-            },
-          ],
+          items: [{ text: '版本 5', link: '/data-exchange-format/v5/' }],
         },
       ],
     },
