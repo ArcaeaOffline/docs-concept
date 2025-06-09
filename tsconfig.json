@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "types": [
-      "unplugin-icons/types/vue",
-    ],
+    "types": ["unplugin-icons/types/vue"]
   },
-  "include": [
-    "docs/**/*"
-  ]
+  "include": ["docs/**/*"]
 }

@@ -8,11 +8,11 @@
 </template>
 
 <script setup lang="ts">
-import { withBase } from 'vitepress';
-import { computed, h } from 'vue';
+import { withBase } from 'vitepress'
+import { computed, h } from 'vue'
 
-import type { DefinitionLinkEntry } from './links';
-import links from './links';
+import type { DefinitionLinkEntry } from './links'
+import links from './links'
 
 const props = defineProps<{
   target: string
