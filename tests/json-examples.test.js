@@ -7,19 +7,17 @@ import addFormats from 'ajv-formats'
 
 const require = createRequire(import.meta.url)
 
-const schemas = {
+const definitionSchemas = {
   pack: require('../docs/definitions/schemas/pack.schema.json'),
   packLocalization: require('../docs/definitions/schemas/pack-localization.schema.json'),
   song: require('../docs/definitions/schemas/song.schema.json'),
 }
 
-const ajv = new Ajv({
-  allErrors: true,
-  schemas: Object.values(schemas),
-})
-addFormats(ajv)
+const defV5Schemas = {
+  pack: require('../docs/data-exchange-format/v5/schemas/pack.schema.json'),
+}
 
-function _validate(schema, data) {
+function validateJson(ajv, schema, data) {
   const validate = ajv.compile(schema)
   const valid = validate(data)
 
@@ -28,19 +26,50 @@ function _validate(schema, data) {
   }
 }
 
+const ajvDefinitions = new Ajv({
+  allErrors: true,
+  schemas: Object.values(definitionSchemas),
+})
+addFormats(ajvDefinitions)
+
+const ajvDefV5 = new Ajv({
+  allErrors: true,
+  schemas: Object.values(defV5Schemas),
+})
+addFormats(ajvDefV5)
+
 describe('definition examples', () => {
+  const _validate = (schema, data) => validateJson(ajvDefinitions, schema, data)
+
   it('pack.json', () => {
-    _validate(schemas.pack, require('../docs/definitions/examples/pack.json'))
+    _validate(
+      definitionSchemas.pack,
+      require('../docs/definitions/examples/pack.json')
+    )
   })
 
   it('pack-localization.json', () => {
     _validate(
-      schemas.packLocalization,
+      definitionSchemas.packLocalization,
       require('../docs/definitions/examples/pack-localization.json')
     )
   })
 
   it('song.json', () => {
-    _validate(schemas.song, require('../docs/definitions/examples/song.json'))
+    _validate(
+      definitionSchemas.song,
+      require('../docs/definitions/examples/song.json')
+    )
+  })
+})
+
+describe('data exchange format v5 examples', () => {
+  const _validate = (schema, data) => validateJson(ajvDefV5, schema, data)
+
+  it('pack.json', () => {
+    _validate(
+      defV5Schemas.pack,
+      require('../docs/data-exchange-format/v5/examples/pack.json')
+    )
   })
 })

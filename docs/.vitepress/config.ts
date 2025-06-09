@@ -47,7 +47,13 @@ export default defineConfig({
         {
           text: '数据交换格式',
           link: '/data-exchange-format/',
-          items: [{ text: '版本 5', link: '/data-exchange-format/v5/' }],
+          items: [
+            {
+              text: '版本 5',
+              link: '/data-exchange-format/v5/',
+              items: [{ text: '曲包', link: '/data-exchange-format/v5/pack' }],
+            },
+          ],
         },
       ],
     },

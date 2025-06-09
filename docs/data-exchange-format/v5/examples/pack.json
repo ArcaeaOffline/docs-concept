@@ -1,0 +1,9 @@
+{
+  "id": "finale_append_1",
+  "name": "Extra Chapter 2",
+  "description": "…",
+  "section": "mainstory",
+  "isWorldExtend": false,
+  "plusCharacter": 1234,
+  "appendParentId": "finale"
+}
