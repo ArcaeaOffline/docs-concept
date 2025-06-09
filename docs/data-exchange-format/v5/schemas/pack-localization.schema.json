@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/data-exchange-format/v5/pack-localization.json",
+  "title": "Arcaea Offline Data Exchange Format (v5) - PackLocalization",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The parent pack's id"
+    },
+    "lang": {
+      "type": "string",
+      "description": "The language code",
+      "examples": ["ja", "zh-Hans"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "lang"]
+}

@@ -10,6 +10,7 @@ const require = createRequire(import.meta.url)
 
 const schemas = {
   pack: require('../../docs/data-exchange-format/v5/schemas/pack.schema.json'),
+  packLocalization: require('../../docs/data-exchange-format/v5/schemas/pack-localization.schema.json'),
 }
 
 const ajv = new Ajv({
@@ -25,6 +26,13 @@ describe('data exchange format v5 examples', () => {
     validate(
       schemas.pack,
       require('../../docs/data-exchange-format/v5/examples/pack.json')
+    )
+  })
+
+  it('pack-localization.json', () => {
+    validate(
+      schemas.packLocalization,
+      require('../../docs/data-exchange-format/v5/examples/pack-localization.json')
     )
   })
 })
