@@ -1,0 +1,39 @@
+{
+  "ratingClass": 2,
+  "rating": 6,
+  "isRatingPlus": false,
+  "chartDesigner": "luguanluguan",
+  "jacketDesigner": "lulushijiandaole",
+  "hasOverridingAudio": true,
+  "hasOverridingJacket": true,
+  "jacketNight": "jacket",
+  "title": "Test -RESURRECTION-",
+  "artist": "TeST",
+  "bg": "base_base",
+  "bgInverse": "base_!base",
+  "bpm": "100",
+  "bpmBase": 100.0,
+  "addedAt": "2025-02-05T02:05:00Z",
+  "version": "75.0.0",
+  "isLegacy11": false,
+  "localizations": [
+    {
+      "lang": "zh-Hans",
+      "title": "Test -复活-"
+    }
+  ],
+  "chartInfo": [
+    {
+      "constant": 6.0,
+      "notes": 2221,
+      "addedAt": "2025-02-05T02:05:00Z",
+      "version": "75.0.0"
+    },
+    {
+      "constant": 11.0,
+      "notes": 2221,
+      "addedAt": "2024-02-05T02:05:00Z",
+      "version": "74.0.0"
+    }
+  ]
+}

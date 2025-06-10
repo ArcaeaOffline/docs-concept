@@ -44,4 +44,12 @@ export default {
     label: h('span', ['难度', h(VPBadge, '本地化')]),
     icon: LocalizationIcon,
   },
+  'chart-info': {
+    href: '/definitions/chart-info',
+    label: h('span', '谱面信息'),
+  },
+  'play-result': {
+    href: '/definitions/play-result',
+    label: h('span', '游玩记录'),
+  },
 } satisfies Record<string, DefinitionLinkEntry>

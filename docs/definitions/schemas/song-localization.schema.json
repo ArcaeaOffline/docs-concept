@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/song-localization.json",
+  "title": "Arcaea Offline Definitions - SongLocalization",
+  "type": "object",
+  "properties": {
+    "lang": {
+      "type": "string",
+      "description": "The language code",
+      "examples": ["ja", "zh-Hans"]
+    },
+    "title": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "hasJacket": {
+      "type": "boolean",
+      "description": "Whether this language has specialized jacket"
+    }
+  },
+  "required": ["lang"]
+}

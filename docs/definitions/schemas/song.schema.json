@@ -98,6 +98,18 @@
     "sourceCopyright": {
       "type": "string",
       "examples": ["© Pigeon Games"]
+    },
+    "localizations": {
+      "type": "array",
+      "items": {
+        "$ref": "https://arcaeaoffline.sevive.xyz/schemas/definitions/song-localization.json"
+      }
+    },
+    "difficulties": {
+      "type": "array",
+      "items": {
+        "$ref": "https://arcaeaoffline.sevive.xyz/schemas/definitions/difficulty.json"
+      }
     }
   },
   "required": [

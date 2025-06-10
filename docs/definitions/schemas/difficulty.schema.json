@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/difficulty.json",
+  "title": "Arcaea Offline Definitions - Difficulty",
+  "type": "object",
+  "properties": {
+    "ratingClass": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "isRatingPlus": {
+      "type": "boolean",
+      "default": false
+    },
+    "chartDesigner": {
+      "type": "string"
+    },
+    "jacketDesigner": {
+      "type": "string"
+    },
+    "hasOverridingAudio": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasOverridingJacket": {
+      "type": "boolean",
+      "default": false
+    },
+    "jacketNight": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "bg": {
+      "type": "string"
+    },
+    "bgInverse": {
+      "type": "string"
+    },
+    "bpm": {
+      "type": "string",
+      "pattern": "(\\d+|\\d+-\\d+|\\d+\\s-\\s\\d+)"
+    },
+    "bpmBase": {
+      "type": "number",
+      "minimum": 0.0
+    },
+    "addedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "string"
+    },
+    "isLegacy11": {
+      "type": "boolean",
+      "default": false
+    },
+    "localizations": {
+      "type": "array",
+      "items": {
+        "$ref": "https://arcaeaoffline.sevive.xyz/schemas/definitions/difficulty-localization.json"
+      }
+    },
+    "chartInfo": {
+      "type": "array",
+      "items": {
+        "$ref": "https://arcaeaoffline.sevive.xyz/schemas/definitions/chart-info.json"
+      }
+    }
+  },
+  "required": [
+    "ratingClass",
+    "rating",
+    "isRatingPlus",
+    "hasOverridingAudio",
+    "hasOverridingJacket",
+    "isLegacy11"
+  ]
+}

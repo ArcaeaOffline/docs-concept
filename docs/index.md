@@ -13,6 +13,9 @@ hero:
       text: 简介
       link: /introduction
     - theme: alt
+      text: 定义
+      link: /definitions/
+    - theme: alt
       text: 数据交换格式
       link: /data-exchange-format
 

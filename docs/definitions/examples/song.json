@@ -19,5 +19,13 @@
   "bgDay": "",
   "bgNight": "",
   "source": "WHEREEVER",
-  "source_copyright": "© example.com 2025"
+  "sourceCopyright": "© example.com 2025",
+  "localizations": [
+    {
+      "lang": "ja",
+      "title": "~テスト~",
+      "hasJacket": true
+    }
+  ],
+  "difficulties": []
 }

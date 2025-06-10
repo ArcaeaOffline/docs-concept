@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/chart-info.json",
+  "title": "Arcaea Offline Definitions - ChartInfo",
+  "type": "object",
+  "properties": {
+    "constant": {
+      "type": "number",
+      "minimum": 0.0,
+      "examples": [9.8, 12.0]
+    },
+    "notes": {
+      "type": "integer",
+      "minimum": 0,
+      "examples": [1368, 1644]
+    },
+    "addedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "string",
+      "examples": ["6.0.0"]
+    }
+  },
+  "required": ["constant", "addedAt"]
+}

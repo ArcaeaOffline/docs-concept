@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/definitions/play-result.json",
+  "title": "Arcaea Offline Definitions - PlayResult",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "songId": {
+      "type": "string"
+    },
+    "ratingClass": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "playedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pure": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pureEarly": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pureLate": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "far": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "farEarly": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "farLate": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lost": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "maxRecall": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "clearType": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "modifier": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "required": ["uuid", "songId", "ratingClass", "score"]
+}
