@@ -27,7 +27,8 @@
     },
     "isDeleted": {
       "type": "boolean",
-      "description": "Whether this song is removed in game"
+      "description": "Whether this song is removed in game",
+      "default": false
     },
     "addedAt": {
       "type": "string",
@@ -52,13 +53,16 @@
     },
     "isRemote": {
       "type": "boolean",
-      "description": "Whether this song has to be downloaded separately"
+      "description": "Whether this song has to be downloaded separately",
+      "default": false
     },
     "isUnlockableInWorld": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "isBeyondUnlockStateLocal": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "purchase": {
       "type": "string"

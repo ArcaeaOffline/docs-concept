@@ -28,7 +28,8 @@
     },
     "isWorldExtend": {
       "type": "boolean",
-      "description": "Whether this pack is a World Extend pack"
+      "description": "Whether this pack is a World Extend pack",
+      "default": false
     },
     "plusCharacter": {
       "type": "integer",
