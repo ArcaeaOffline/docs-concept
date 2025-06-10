@@ -1,5 +1,5 @@
 <template>
-  <a class="VPLink link link-with-icon" :href="withBase(linkEntry.href)">
+  <a class="VPLink link link-with-icon" :href="linkHref">
     <i class="link-with-icon-icon">
       <component :is="linkEntry.icon" />
     </i>
@@ -27,6 +27,14 @@ const linkEntry = computed<DefinitionLinkEntry>(() => {
     return {
       label: h('span', `<! ${props.target} !>`),
     }
+  }
+})
+
+const linkHref = computed(() => {
+  if (linkEntry.value.href) {
+    return withBase(linkEntry.value.href)
+  } else {
+    return null
   }
 })
 </script>
