@@ -1,4 +1,4 @@
-# 数据交换格式<Badge>版本 5</Badge>
+# 数据交换模式<Badge>版本 5</Badge>
 
 ::: danger
 <span style="font-size: 5rem">不稳定！</span>

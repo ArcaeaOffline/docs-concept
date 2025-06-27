@@ -17,7 +17,7 @@ export default defineConfig({
     nav: [
       { text: '简介', link: '/introduction/' },
       { text: '定义', link: '/definitions/' },
-      { text: '数据交换格式', link: '/data-exchange-format/' },
+      { text: '数据交换模式', link: '/data-interchange-schemas/' },
     ],
 
     sidebar: {
@@ -43,34 +43,43 @@ export default defineConfig({
           ],
         },
       ],
-      '/data-exchange-format/': [
+      '/data-interchange-schemas/': [
         {
-          text: '数据交换格式',
-          link: '/data-exchange-format/',
+          text: '数据交换模式',
+          link: '/data-interchange-schemas/',
           items: [
             {
               text: '版本 5',
-              link: '/data-exchange-format/v5/',
+              link: '/data-interchange-schemas/v5/',
               items: [
-                { text: '曲包', link: '/data-exchange-format/v5/pack' },
-                { text: '歌曲', link: '/data-exchange-format/v5/song' },
-                { text: '难度', link: '/data-exchange-format/v5/difficulty' },
-                { text: '谱面信息', link: '/data-exchange-format/v5/chart-info' },
-                { text: '游玩记录', link: '/data-exchange-format/v5/play-result' },
+                { text: '曲包', link: '/data-interchange-schemas/v5/pack' },
+                { text: '歌曲', link: '/data-interchange-schemas/v5/song' },
+                {
+                  text: '难度',
+                  link: '/data-interchange-schemas/v5/difficulty',
+                },
+                {
+                  text: '谱面信息',
+                  link: '/data-interchange-schemas/v5/chart-info',
+                },
+                {
+                  text: '游玩记录',
+                  link: '/data-interchange-schemas/v5/play-result',
+                },
                 {
                   text: '本地化对象',
                   items: [
                     {
                       text: '曲包',
-                      link: '/data-exchange-format/v5/pack-localization',
+                      link: '/data-interchange-schemas/v5/pack-localization',
                     },
                     {
                       text: '歌曲',
-                      link: '/data-exchange-format/v5/song-localization',
+                      link: '/data-interchange-schemas/v5/song-localization',
                     },
                     {
                       text: '难度',
-                      link: '/data-exchange-format/v5/difficulty-localization',
+                      link: '/data-interchange-schemas/v5/difficulty-localization',
                     },
                   ],
                 },

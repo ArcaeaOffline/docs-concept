@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://arcaeaoffline.sevive.xyz/schemas/data-exchange-format/v5/pack.json",
-  "title": "Arcaea Offline Data Exchange Format (v5) - Pack",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/pack.json",
+  "title": "Arcaea Offline Data Interchange Schemas (v5) - Pack",
   "type": "object",
   "properties": {
     "id": {

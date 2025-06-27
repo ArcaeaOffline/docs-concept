@@ -16,8 +16,8 @@ hero:
       text: 定义
       link: /definitions/
     - theme: alt
-      text: 数据交换格式
-      link: /data-exchange-format
+      text: 数据交换模式
+      link: /data-interchange-schemas
 
 features:
   - icon: '&#x23f1'
