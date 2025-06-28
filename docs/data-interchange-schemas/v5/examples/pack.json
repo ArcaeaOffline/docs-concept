@@ -4,6 +4,6 @@
   "description": "…",
   "section": "mainstory",
   "isWorldExtend": false,
-  "plusCharacter": 1234,
+  "unlocksPartner": 1234,
   "appendParentId": "finale"
 }

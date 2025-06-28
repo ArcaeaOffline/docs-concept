@@ -4,7 +4,7 @@
   "description": "The final update of Arcaea Offline,\nwhich bring about the project's end.\n\nIn addition to…",
   "section": "mainstory",
   "isWorldExtend": false,
-  "plusCharacter": 1234,
+  "unlocksPartner": 1234,
   "appendages": [
     {
       "id": "test_append_1",

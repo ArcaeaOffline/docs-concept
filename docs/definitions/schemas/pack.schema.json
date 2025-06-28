@@ -31,7 +31,7 @@
       "description": "Whether this pack is a World Extend pack",
       "default": false
     },
-    "plusCharacter": {
+    "unlocksPartner": {
       "type": "integer",
       "minimum": 0
     },
