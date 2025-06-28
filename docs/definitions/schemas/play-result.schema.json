@@ -27,6 +27,10 @@
       "type": "integer",
       "minimum": 0
     },
+    "pureInaccurate": {
+      "type": "integer",
+      "minimum": 0
+    },
     "pureEarly": {
       "type": "integer",
       "minimum": 0
@@ -36,6 +40,10 @@
       "minimum": 0
     },
     "far": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "farInaccurate": {
       "type": "integer",
       "minimum": 0
     },
