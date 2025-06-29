@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/song.json",
+  "title": "Song",
+  "description": "Arcaea Offline Data Interchange Schemas Version 5 - Song",
+  "type": "object",
+  "properties": {
+    "pack_id": {
+      "type": "string",
+      "description": "Which pack does this song belongs to"
+    },
+    "id": {
+      "type": "string",
+      "examples": ["test"]
+    },
+    "idx": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "title": {
+      "type": "string",
+      "description": "The **english** title of the song"
+    },
+    "artist": {
+      "type": "string",
+      "description": "The artist's **english** name"
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "description": "Whether this song is removed in game",
+      "default": false
+    },
+    "addedAt": {
+      "$ref": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json#/$defs/addedAtObject"
+    },
+    "bpm": {
+      "$ref": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json#/$defs/bpmObject"
+    },
+    "isRemote": {
+      "type": "boolean",
+      "description": "Whether this song has to be downloaded separately",
+      "default": false
+    },
+    "isUnlockableInWorld": {
+      "type": "boolean",
+      "default": false
+    },
+    "isBeyondUnlockStateLocal": {
+      "type": "boolean",
+      "default": false
+    },
+    "purchase": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "examples": ["original", "partner", "musicgames"]
+    },
+    "side": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "background": {
+      "$ref": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json#/$defs/backgrounds"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "display": {
+          "type": "string"
+        },
+        "copyright": {
+          "type": "string"
+        }
+      },
+      "required": ["display"]
+    }
+  },
+  "required": [
+    "id",
+    "isDeleted",
+    "addedAt",
+    "isRemote",
+    "isUnlockableInWorld",
+    "isBeyondUnlockStateLocal"
+  ]
+}

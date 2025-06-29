@@ -1,0 +1,20 @@
+{
+  "uuid": "00000000-0000-0000-0000-000000000000",
+  "songId": "test",
+  "ratingClass": 2,
+  "playedAt": "2025-01-01T00:00:00Z",
+  "score": 10002219,
+  "pure": 2219,
+  "pureInaccurate": 2,
+  "pureEarly": 1,
+  "pureLate": 1,
+  "far": 0,
+  "farInaccurate": 0,
+  "farEarly": 0,
+  "farLost": 0,
+  "lost": 0,
+  "maxRecall": 2221,
+  "clearType": 3,
+  "modifier": 2,
+  "comment": "wow i pm test"
+}

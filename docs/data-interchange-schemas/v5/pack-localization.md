@@ -1,6 +1,6 @@
-# 曲包<Badge>本地化对象</Badge>
+# 曲包（本地化对象）
 
-曲包（本地化对象）。
+包（Aア）。
 
 ## 示例
 
@@ -8,4 +8,4 @@
 
 ## JSON Schema
 
-<<< schemas/pack-localization.schema.json
+<<< schemas/pack-localization.json

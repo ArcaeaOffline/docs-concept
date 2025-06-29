@@ -1,6 +1,6 @@
 # 曲包
 
-曲包。
+包。
 
 ## 示例
 
@@ -8,4 +8,4 @@
 
 ## JSON Schema
 
-<<< schemas/pack.schema.json
+<<< schemas/pack.json

@@ -1,0 +1,28 @@
+{
+  "songId": "test",
+  "ratingClass": 3,
+  "rating": 12,
+  "isRatingPlus": true,
+  "chartDesigner": "chart designer",
+  "jacketDesigner": "jacket designer",
+  "hasOverridingAudio": false,
+  "hasOverridingJacket": true,
+  "jacketNight": "jacket_night",
+  "title": "TEsT",
+  "artist": "teSt",
+  "background": {
+    "base": "bg_base",
+    "inverse": "bg_!base",
+    "day": "bg_base",
+    "night": "bg_!day"
+  },
+  "bpm": {
+    "display": "123",
+    "value": 984
+  },
+  "addedAt": {
+    "date": "2022-02-22T22:22:22.2Z",
+    "version": "9.8.4"
+  },
+  "isLegacy11": false
+}

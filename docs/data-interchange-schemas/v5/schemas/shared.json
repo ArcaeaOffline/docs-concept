@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json",
+  "title": "Shared",
+  "description": "Arcaea Offline Data Interchange Schemas Version 5 - Shared objects",
+  "$defs": {
+    "bpmDisplay": {
+      "type": "string",
+      "description": "BPM value or range",
+      "pattern": "^\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)?\\s-\\s\\d+(\\.\\d+)?$",
+      "examples": ["75", "75.7", "75 - 100", "75.7 - 100.1"]
+    },
+    "bpmObject": {
+      "type": "object",
+      "properties": {
+        "display": {
+          "$ref": "#/$defs/bpmDisplay"
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": ["value"]
+    },
+    "backgrounds": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "inverse": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string"
+        },
+        "night": {
+          "type": "string"
+        }
+      },
+      "required": ["base"]
+    },
+    "addedAtObject": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "version": {
+          "type": "string",
+          "examples": ["3.0.1", "6.0.0"]
+        }
+      },
+      "required": ["date"]
+    }
+  }
+}

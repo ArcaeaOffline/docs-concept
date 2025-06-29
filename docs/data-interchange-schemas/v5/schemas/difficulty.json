@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/difficulty.json",
+  "title": "Difficulty",
+  "description": "Arcaea Offline Data Interchange Schemas Version 5 - Difficulty",
+  "type": "object",
+  "properties": {
+    "songId": {
+      "type": "string"
+    },
+    "ratingClass": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "isRatingPlus": {
+      "type": "boolean",
+      "default": false
+    },
+    "chartDesigner": {
+      "type": "string"
+    },
+    "jacketDesigner": {
+      "type": "string"
+    },
+    "hasOverridingAudio": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasOverridingJacket": {
+      "type": "boolean",
+      "default": false
+    },
+    "jacketNight": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "background": {
+      "$ref": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json#/$defs/backgrounds"
+    },
+    "bpm": {
+      "$ref": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json#/$defs/bpmObject"
+    },
+    "addedAt": {
+      "$ref": "https://arcaeaoffline.sevive.xyz/schemas/data-interchange-schemas/v5/shared.json#/$defs/addedAtObject"
+    },
+    "isLegacy11": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "songId",
+    "ratingClass",
+    "rating",
+    "isRatingPlus",
+    "hasOverridingAudio",
+    "hasOverridingJacket",
+    "isLegacy11"
+  ]
+}

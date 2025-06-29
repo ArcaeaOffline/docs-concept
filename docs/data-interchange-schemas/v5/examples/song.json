@@ -1,0 +1,31 @@
+{
+  "pack_id": "test_append_1",
+  "id": "test",
+  "idx": 123,
+  "title": "TeST",
+  "artist": "tEst",
+  "isDeleted": false,
+  "addedAt": {
+    "date": "2022-02-22T22:22:22.2Z",
+    "version": "22.22.22"
+  },
+  "bpm": {
+    "display": "222",
+    "value": 222
+  },
+  "isRemote": true,
+  "isUnlockableInWorld": false,
+  "isBeyondUnlockStateLocal": false,
+  "purchase": "test_append_1",
+  "side": 1,
+  "background": {
+    "base": "test_light",
+    "inverse": "test_conflict",
+    "day": "test_light",
+    "night": "test_conflict"
+  },
+  "source": {
+    "display": "a game",
+    "copyright": "© 283375"
+  }
+}
