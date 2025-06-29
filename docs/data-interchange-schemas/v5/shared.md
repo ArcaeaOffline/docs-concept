@@ -4,4 +4,4 @@
 
 ## JSON Schema
 
-<<< schemas/shared.schema.json
+<<< schemas/shared.json
